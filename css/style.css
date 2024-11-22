@@ -1,0 +1,414 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+@font-face {
+    font-family: NunitoSansL;
+    src: url(../letras/NunitoSans-Light.ttf);
+}
+
+@font-face {
+    font-family: NunitoSansR;
+    src: url(../letras/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../letras/Raleway-Italic.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../letras/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Pacifico;
+    src: url(../letras/Pacifico.ttf);
+}
+
+@font-face {
+    font-family: PoppinsR;
+    src: url(../letras/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: PoppinsL;
+    src: url(../letras/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Osvaldo;
+    src: url(../letras/Oswald-RegularItalic.ttf);
+}
+
+header {
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    background-image: url(../imgs/viagem3.png);
+    border-radius: 1%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Raleway;
+}
+
+.responsive-img {
+
+    width: 350px;
+    height: 250px; 
+    max-width: 100%; 
+    height: auto;
+    
+}
+
+@media (max-width: 767px) {
+    .responsive-img {
+        width: 45%; 
+        height: 10%;
+        margin-right: 50%;
+    }
+    header {
+        height: auto; 
+    }
+}
+
+.headerh5{
+
+    display: block;
+    padding-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media only screen and (max-width: 767px) {
+    .headerh5 {
+
+        display: block; 
+        font-size: 16px; 
+        padding-top: 5%;
+        margin-left: 5%; 
+        margin-right: 5%;
+    }
+}
+
+#delayedHeading {
+
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
+}
+
+.show {
+
+    opacity: 1 !important;
+    
+}
+
+#quemsomos {
+
+    text-align: center;
+    color: #333333;
+}
+
+#quemsomosp1 {
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #333333;
+    font-family: NunitoSansR;
+}
+
+#spamquemsomosp1 {
+
+    font-size: 170%;
+    text-align: center;
+    color: #333333;
+    font-family: Pacifico;
+}
+
+.responsive-img2 {
+
+    width: 500px;
+    max-width: 100%; 
+    height: auto; 
+}
+
+@media (max-width: 767px) {
+    .responsive-img2 {
+        width: 60%; 
+        height: 20%;
+       
+    }
+}
+
+#quemsoueu {
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    border-radius: 1%;
+    background-color: #ABDFD3; 
+   
+   
+}
+
+#quemsoueuh1 {
+
+    font-size: 250%;
+    padding-bottom: 2%;
+    font-family: PoppinsR;
+}
+
+#quemsoueup {
+
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 5%;
+    color: #333333;
+    font-family: NunitoSansR;
+}
+
+.responsive-img3 {
+
+    width: 250px;
+    max-width: 100%; 
+    height: auto; 
+}
+
+@media (max-width: 767px) {
+    .responsive-img3 {
+        width: 40%; 
+        height: 10%;
+  
+    }
+}
+
+#primeirasdicas {
+    
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    color: #333333;
+    font-family: PoppinsR;
+    border-radius: 1%;
+}
+
+.dica  {
+
+    transition: filter 0.5s ease; 
+}
+
+.dica:hover  {
+
+    transform: scale(1.1);
+   
+}
+
+#primeirasdicash1 {
+
+    font-size: 350%;
+    padding-bottom: 5%;
+}
+
+.modal1 {
+    
+    display: none;     
+    position: fixed;
+    z-index: 999;
+    padding-top: 50px;
+    left: 0;     
+    top: 0;
+    width: 100%;  
+    height: 100%;
+    min-height: 100vh; 
+    overflow: auto;
+    background-image: url(../imgs/aluguelCarro2.avif);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255,0.6);
+    background-blend-mode: overlay;  
+    border-radius: 1%;
+}
+
+.modal2 {
+    
+    display: none;     
+    position: fixed;
+    z-index: 999;
+    padding-top: 50px;
+    left: 0;     
+    top: 0; 
+    width: 100%;  
+    height: 100%;
+    min-height: 100vh; 
+    overflow: auto;
+    background-image: url(../imgs/cuidadosBagagens2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: overlay;  
+    border-radius: 1%;
+}
+
+.modal3 {
+    
+    display: none;     
+    position: fixed;
+    z-index: 999;
+    padding-top: 50px;
+    left: 0;     
+    top: 0; 
+    width: 100%;  
+    height: 100%;
+    min-height: 100vh; 
+    overflow: auto;
+    background-image: url(../imgs/idioma2.avif);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: overlay;  
+    border-radius: 1%;
+}
+
+.modal-content {
+    
+    position: relative;
+    z-index: 2;  
+    font-family: NunitoSansR;  
+    color: #333333;   
+    background-color: white;
+    margin: auto;   
+    padding: 20px;   
+    border: 1px solid #888;  
+    width: 90%;
+    max-width: 1000px; 
+}
+
+.modal-text1, .modal-text2, .modal-text3 {
+
+    font-size: 125%;
+    color: black;
+    line-height: 1.6;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.show {
+   
+    opacity: 1;
+}
+
+.close {
+
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+
+    padding-top: 2%;
+    background-color: #ABDFD3;   
+}
+
+#footerh1 {   
+
+    text-align: center;
+    color: #333333;
+    font-family: PoppinsR;
+    padding-bottom: 2%;
+}
+
+#contatos {
+
+    font-size: 200%;
+    color:#4B0082;
+}
+
+.contatosspan {
+
+    color: #333333;
+    padding-left: 3%;
+    font-size: 50%;
+    font-family: NunitoSansR;
+}
+
+#midias {
+   
+    font-size: 200%;
+    color:#4B0082;
+}
+
+
+.midiasspan {
+
+    color: #333333;
+    padding-left: 3%;
+    font-size:50%;
+    font-family: NunitoSansR;
+}
+
+
+#midiasfacebook {
+
+    text-decoration: none;
+    color: #4B0082;
+    font-size: 100%;
+}
+
+#midiasfacebook:hover {
+
+   color:white;
+    
+}
+
+
+#midiasinstagram {
+    text-decoration: none;
+    color: #4B0082;
+    font-size: 100%;  
+}
+
+#midiasinstagram:hover {
+
+    color: white;
+    
+}
+
+@media (max-width: 767px) {
+     #responsivefooter{
+        font-size: 70%; ;
+  
+    }
+}
+
+#produzidopor {
+
+    background-color: #ABDFD3; 
+    text-align: center;
+    color: #333333;
+    font-family: NunitoSansR;
+    font-size: 70%;
+    padding-top: 1%;
+    padding-bottom: 1%; 
+}
+ 
+
