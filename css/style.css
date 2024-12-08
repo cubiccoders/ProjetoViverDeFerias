@@ -66,34 +66,12 @@ header {
     
 }
 
-@media (max-width: 767px) {
-    .responsive-img {
-        width: 45%; 
-        height: 10%;
-        margin-right: 50%;
-    }
-    header {
-        height: auto; 
-    }
-}
-
 .headerh5{
 
     display: block;
     padding-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
-}
-
-@media only screen and (max-width: 767px) {
-    .headerh5 {
-
-        display: block; 
-        font-size: 16px; 
-        padding-top: 5%;
-        margin-left: 5%; 
-        margin-right: 5%;
-    }
 }
 
 #delayedHeading {
@@ -139,14 +117,6 @@ header {
     height: auto; 
 }
 
-@media (max-width: 767px) {
-    .responsive-img2 {
-        width: 60%; 
-        height: 20%;
-       
-    }
-}
-
 #quemsoueu {
 
     padding-top: 2%;
@@ -179,14 +149,6 @@ header {
     width: 250px;
     max-width: 100%; 
     height: auto; 
-}
-
-@media (max-width: 767px) {
-    .responsive-img3 {
-        width: 40%; 
-        height: 10%;
-  
-    }
 }
 
 #primeirasdicas {
@@ -350,7 +312,25 @@ footer {
     font-size: 50%;
     font-family: NunitoSansR;
 }
+#contatoswhatsapp, #contatosemail {
 
+    text-decoration: none;
+    color: #4B0082;
+    font-size: 100%;
+}
+
+#contatoswhatsapp:hover {
+
+    color:white;
+  
+}
+
+#contatosemail:hover {
+
+    color:white;
+  
+}
+ 
 #midias {
    
     font-size: 200%;
@@ -380,7 +360,6 @@ footer {
     
 }
 
-
 #midiasinstagram {
     text-decoration: none;
     color: #4B0082;
@@ -393,13 +372,6 @@ footer {
     
 }
 
-@media (max-width: 767px) {
-     #responsivefooter{
-        font-size: 70%; ;
-  
-    }
-}
-
 #produzidopor {
 
     background-color: #ABDFD3; 
@@ -409,6 +381,50 @@ footer {
     font-size: 70%;
     padding-top: 1%;
     padding-bottom: 1%; 
+}
+
+#aempresa:hover{
+    color: white;
+}
+
+
+@media (max-width: 767px) {
+    header {
+        height: auto; 
+    }
+
+    .headerh5 {
+
+        display: block; 
+        font-size: 16px; 
+        padding-top: 5%;
+        margin-left: 5%; 
+        margin-right: 5%;
+    }
+
+    .responsive-img {
+        width: 45%; 
+        height: 10%;
+        margin-right: 50%;
+    }
+
+    .responsive-img3 {
+        width: 40%; 
+        height: 10%;
+  
+    }
+
+    .responsive-img2 {
+        width: 60%; 
+        height: 20%;
+       
+    }
+
+    #responsivefooter{
+        font-size: 70%; ;
+  
+    }
+      
 }
  
 
