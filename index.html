@@ -382,7 +382,7 @@
     </footer>
     <div id="produzidopor">
         <hr style="border: none; height: 1px; background-color: black;">
-            Website elaborado por <a id="aempresa"href="https://cubiccoders.com/CubicCoders/">CUBIC CODERS</a>-2024
+            Website elaborado por <a id="aempresa"href="https://cubiccoders.com/CubicCoders/">CUBIC CODERS</a>-<span id="ano">2024</span>
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -395,10 +395,10 @@
         });
 
         document.addEventListener("DOMContentLoaded", function () {
-    var images = document.querySelectorAll('img[data-modal]');
-    var modals = document.querySelectorAll('.modal');
-    var closeButtons = document.querySelectorAll('.close');
-    images.forEach(function (img) {
+        var images = document.querySelectorAll('img[data-modal]');
+        var modals = document.querySelectorAll('.modal');
+        var closeButtons = document.querySelectorAll('.close');
+        images.forEach(function (img) {
         img.onclick = function () {
             var modalId = this.getAttribute('data-modal');
             var modal = document.getElementById(modalId);
@@ -445,6 +445,10 @@
         });
     };
 });
+
+const anoElemento = document.getElementById('ano');
+const anoAtual = new Date().getFullYear();
+anoElemento.textContent = anoAtual;
 
 
 
